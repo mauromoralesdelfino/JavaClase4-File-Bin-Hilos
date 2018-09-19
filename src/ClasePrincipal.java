@@ -6,7 +6,7 @@ import java.io.*;
 
 public class ClasePrincipal {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		/* ESCRITURA Y LECTURA BINARIA
 		File fi = new File("C:\\Users\\alumno\\Desktop\\PDF.txt");
@@ -38,12 +38,16 @@ public class ClasePrincipal {
 		t.start();//hilo se va a ejecutar hasta que se reinicie computadora. Termina cuando sale del metodo run
 		//System.out.println("Termino main");
 		//System.out.println(Thread.currentThread().getName());// en este plano siempre es el main
-		while(t.isAlive() || t2.isAlive())
+		/*while(t.isAlive() || t2.isAlive())//detiene/ demora al main, no sale del main hasta que no terminan los hilos
 			
 		{
 			//System.out.println("Termino main");
 			System.out.println(Thread.currentThread().getName());
-		}
+		}*/
+		Thread.sleep(1000);
+		System.out.println(Thread.currentThread().getName());
+		
+		
 		
 		
 		
